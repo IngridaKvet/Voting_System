@@ -22,6 +22,8 @@ DB_PASS=your_db_password
 JWT_SECRET=your_super_secret_jwt_key
 ```
 
+SQL table backups are in tables folder.
+
 ```bash
 npm run start
 ```
