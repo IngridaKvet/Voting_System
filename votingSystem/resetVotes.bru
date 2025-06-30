@@ -1,0 +1,11 @@
+meta {
+  name: resetVotes
+  type: http
+  seq: 13
+}
+
+delete {
+  url: http://localhost:3001/topics/8/reset
+  body: none
+  auth: inherit
+}

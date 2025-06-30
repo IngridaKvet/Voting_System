@@ -1,0 +1,15 @@
+meta {
+  name: getAllTopicsSearch
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3001/topics?search=artificial
+  body: none
+  auth: inherit
+}
+
+params:query {
+  search: artificial
+}

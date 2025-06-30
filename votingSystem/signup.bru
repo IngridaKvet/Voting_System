@@ -1,0 +1,21 @@
+meta {
+  name: signup
+  type: http
+  seq: 9
+}
+
+post {
+  url: http://localhost:3001/users/signup
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "user_name": "admin1",
+    "email": "testadmin1@test.lt",
+    "password": "admin1",
+    "passwordconfirm": "admin1",
+    "role": "admin"
+  }
+}

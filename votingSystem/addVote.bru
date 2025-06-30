@@ -1,0 +1,18 @@
+meta {
+  name: addVote
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:3001/topics/8
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "option_label": "Option A",
+    "vote_amount" : 5
+  }
+}

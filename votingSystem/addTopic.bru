@@ -1,0 +1,27 @@
+meta {
+  name: addTopic
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:3001/topics
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "What's the best way to start the day?",
+    "description": "Choose your favorite morning routine to kickstart your day.",
+    "options": [
+      "Drinking coffee",
+      "Doing a workout",
+      "Meditation or journaling",
+      "Cold shower and a healthy breakfast",
+          "Cold shower and a healthy breakfast",
+          "Cold shower and a healthy breakfast",
+          "Cold shower and a healthy breakfast"
+    ]
+  }
+}

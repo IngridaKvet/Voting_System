@@ -1,0 +1,18 @@
+meta {
+  name: logout
+  type: http
+  seq: 11
+}
+
+post {
+  url: http://localhost:3001/users/logout
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "testuser1@test.lt",
+    "password": "pass1"
+  }
+}
